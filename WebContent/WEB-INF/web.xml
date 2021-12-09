@@ -17,21 +17,49 @@
         <servlet-name>main</servlet-name>
         <url-pattern>/main</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>download-encrypted</servlet-name>
+        <jsp-file>/downloadEncrypted.html</jsp-file>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>download-encrypted</servlet-name>
+        <url-pattern>/download-encrypted</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>download-decrypted</servlet-name>
+        <jsp-file>/downloadDecrypted.html</jsp-file>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>download-decrypted</servlet-name>
+        <url-pattern>/download-decrypted</url-pattern>
+  </servlet-mapping>
+  
   <servlet>
         <servlet-name>download</servlet-name>
-        <jsp-file>/download.html</jsp-file>
+        <jsp-file>/fileDownload.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
         <servlet-name>download</servlet-name>
         <url-pattern>/download</url-pattern>
-  </servlet-mapping>
-  <servlet>
-        <servlet-name>download-file</servlet-name>
-        <jsp-file>/fileDownload.jsp</jsp-file>
-  </servlet>
-  <servlet-mapping>
-        <servlet-name>download-file</servlet-name>
-        <url-pattern>/download-file</url-pattern>
   </servlet-mapping> 
 
+  <servlet>
+        <servlet-name>uploadCloud</servlet-name>
+        <jsp-file>/cloudUpload.html</jsp-file>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>uploadCloud</servlet-name>
+        <url-pattern>/uploadCloud</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>upload</servlet-name>
+        <jsp-file>/cloudUpload.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>upload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
 </web-app>
