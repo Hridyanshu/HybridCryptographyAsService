@@ -9,12 +9,12 @@
 		Encryption.encrypt(fileName, key);
 		fileName = "encrypted-" + fileName;
 		session.setAttribute("fileName",fileName);
-		response.sendRedirect("download");
+		response.sendRedirect("download-encrypted");
 	}
 	else if(choice.equals("decrypt")) {
 		Decryption.decrypt(fileName, key);
 		fileName = "decrypted-" + fileName;
 		session.setAttribute("fileName",fileName);
-		response.sendRedirect("download");
+		response.sendRedirect("download-decrypted");
 	}
 %>
